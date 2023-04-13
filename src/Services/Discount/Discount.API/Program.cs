@@ -1,4 +1,10 @@
+using Discount.API.Extensions;
 using Discount.API.Repositories;
+
+//Host
+var host = Host.CreateDefaultBuilder(args).Build();
+host.MigrateDatabase<Program>();
+host.Start();
 
 var builder = WebApplication.CreateBuilder(args);
 
