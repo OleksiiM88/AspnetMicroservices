@@ -1,7 +1,7 @@
 using Discount.API.Extensions;
 using Discount.API.Repositories;
 
-//Host
+//Host for migration(seeding)
 var host = Host.CreateDefaultBuilder(args).Build();
 host.MigrateDatabase<Program>();
 host.Start();
